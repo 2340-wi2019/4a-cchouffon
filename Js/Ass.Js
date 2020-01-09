@@ -11,24 +11,25 @@ $(document).ready(function() {
         //Write your decision structure between this comment...
         if (letterGrade == "A"){
             console.log("inside if(A)")
-            $('#decision-holder').append("Grade range for A: 90% to 100%");
+            $('#decision-holder').text("Grade range for A: 90% to 100%");
         }
 
         else if(letterGrade == "B"){
-            $('#letter-grade').append("Grade range for B: 80% to 90%");
+            $('#decision-holder').text("Grade range for B: 80% to 90%");
         }
 
         else if (letterGrade == "C"){
-            $('#letter-grade').append("Grade range for C: 70% to 80%");
+            $('#decision-holder').text("Grade range for C: 70% to 80%");
         }
          else if(letterGrade == "D"){
-            $('#letter-grade').append("Grade range for D: 70% to 60%");
+            $('#decision-holder').text("Grade range for D: 70% to 60%");
          }
          else if (letterGrade == "F"){
-            $('#letter-grade').append("Grade range for F: Less than 60%");
+            $('#decision-holder').text("Grade range for F: Less than 60%");
          }
-         else{"Error! Invalid value entered"};
-
+         
+         else {$('#decision-holder').text("Error! Invalid value entered");}
+         
         //...and this comment
 
         //Now, write a for, while, OR do-while loop between this comment...
